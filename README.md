@@ -75,11 +75,11 @@ The program utilizes the following key functions:
 
 WasteX provides an efficient solution for optimizing landfill selection and waste management through distance calculations and Dijkstra's algorithm, making it a valuable tool for urban planning and environmental management.
 
-## .exe file
+## 🔗 .exe file
 
 Template
 
-## Contacts
+## 🔗 Contacts
 
 -Flores Castillo Miriam del Carmen: https://www.linkedin.com/in/mirflores/
 
