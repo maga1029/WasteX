@@ -1,6 +1,6 @@
 # WasteX: Landfill Selection Optimization
 
-WasteX is a Python-based tool developed to solve optimization problems related to landfill selection. The program utilizes Dijkstra's algorithm (Dijkstra, 1959) to determine the 3 optimal landfills for waste collection based on the distances traveled from 9 towns. The tool aims to minimize the distances traveled by waste collection trucks while enabling a maximum of 3 landfills.
+WasteX is a Python-based tool developed to solve optimization problems related to landfill selection. The program utilizes Dijkstra's algorithm (Dijkstra, 1959) to determine the 3 optimal landfills for waste collection based on the distances traveled from 9 towns. The tool aims to minimize the distances traveled by waste collection trucks while enabling a maximum of 3 landfills. The program takes into account various factors, such as waste density and growth rate. This project features a graphical interface developed using the Tkinter library to visualize and optimize the selection of landfills.
 
 ## Features
 
@@ -11,6 +11,12 @@ WasteX is a Python-based tool developed to solve optimization problems related t
 -Consideration of Waste Density and Growth Rate: Factors in waste density and growth rate to ensure efficient waste management.
 
 -Maximum Number of Enabled Landfills: Restricts the number of active landfills to a maximum of 3.
+
+-Visualization of maps with geographic coordinates.
+
+-Interactive interface with buttons to control the behavior of the legend and visualized objects.
+
+-Two maps available for result visualization.
 
 ## Requirements
 
@@ -32,7 +38,13 @@ pip install pulp
 
 `Toneladas y Distancia.csv`: CSV file containing the distances between towns and landfills in the sheet `Distancia Municipios a Rellenos`.
 
-`fun_algoritmo.py`: Script that contains the main function for calculating and selecting the three optimal landfills.
+`main.py`: The main file that runs the graphical interface.
+
+`algoritmo_distancias.py`: Contains the algorithm that calculates the optimal distances for selecting the landfills. Output: A tuple with the numbers corresponding to the three optimal landfills.
+
+`Longitudes_Tabla.xlsx`: Excel file containing geographic coordinates in degrees, minutes, and seconds format.
+
+`conversion_grados.py`: Functions that convert geographic coordinates. Output: A list with the coordinates converted to decimal degrees, along with the calculated relative distances.
 
 ## Usage
 Place the `Toneladas y Distancia.xlsx` file in the same directory as the Python script.
@@ -51,6 +63,10 @@ The function `fun_algoritmo()` performs the following tasks:
 
 
 This project also includes a Python function that converts geographic coordinates from degrees, minutes, and seconds to decimal degrees and calculates relative distances in latitude and longitude between a series of points and a reference coordinate.
+
+## Interface Structure
+
+The graphical interface consists of a Canvas displaying the base map with the geographic coordinates of the potential landfills. Buttons in the legend allow interaction with the points on the map, changing their colors based on their status. A "Calculate Optimal Location" button executes the algorithm to highlight the best landfills.
 
 ## Functionality
 
