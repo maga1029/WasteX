@@ -77,7 +77,7 @@ WasteX provides an efficient solution for optimizing landfill selection and wast
 
 ## 🔗 .exe file
 
-Template
+[.exe file](https://drive.google.com/drive/folders/1oftxZcIyBHwX0wMPNntaELyZPbKcVTWt?usp=sharing)
 
 ## 🔗 Contacts
 
